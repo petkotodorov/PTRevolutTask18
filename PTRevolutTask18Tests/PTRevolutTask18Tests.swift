@@ -11,26 +11,53 @@ import XCTest
 
 class PTRevolutTask18Tests: XCTestCase {
     
+    var viewModel: CurrencyListViewModel = CurrencyListViewModel(withApiClient: ApiClient())
+    
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        let currencies = [Currency(name: "EUR", exchangeRate: 1),
+                          Currency(name: "USD", exchangeRate: 2.5),
+                          Currency(name: "BGN", exchangeRate: 3),
+                          Currency(name: "RUB", exchangeRate: 4)]
+        viewModel.allCurrencies = currencies
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+        viewModel.allCurrencies.removeAll()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testCount() {
+        XCTAssertTrue(viewModel.currenciesCount() == 4)
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testNames() {
+        XCTAssertTrue(viewModel.currencyNameForIndex(0) == "EUR")
+        XCTAssertTrue(viewModel.currencyNameForIndex(1) == "USD")
+        XCTAssertTrue(viewModel.currencyNameForIndex(2) == "BGN")
+        XCTAssertTrue(viewModel.currencyNameForIndex(3) == "RUB")
+    }
+    
+    func testValues() {
+        XCTAssertTrue(viewModel.currencyValueForIndex(0) == "1.00")
+        XCTAssertTrue(viewModel.currencyValueForIndex(1) == "2.50")
+        XCTAssertTrue(viewModel.currencyValueForIndex(2) == "3.00")
+        XCTAssertTrue(viewModel.currencyValueForIndex(3) == "4.00")
+    }
+    
+    func testChangedBaseValue() {
+        viewModel.baseValue = 2
+        XCTAssertTrue(viewModel.currencyValueForIndex(0) == "2.00")
+        XCTAssertTrue(viewModel.currencyValueForIndex(1) == "5.00")
+        XCTAssertTrue(viewModel.currencyValueForIndex(2) == "6.00")
+        XCTAssertTrue(viewModel.currencyValueForIndex(3) == "8.00")
+    }
+    
+    func testRearrangedNames() {
+        viewModel.moveRow(at: 2, to: 0)
+        XCTAssertTrue(viewModel.currencyNameForIndex(0) == "BGN")
+        XCTAssertTrue(viewModel.currencyNameForIndex(1) == "EUR")
+        XCTAssertTrue(viewModel.currencyNameForIndex(2) == "USD")
+        XCTAssertTrue(viewModel.currencyNameForIndex(3) == "RUB")
     }
     
 }

@@ -7,12 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D4302A12126FDF5005346A7 /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4302A02126FDF5005346A7 /* CurrencyTableViewCell.swift */; };
+		3D4302A42129E1F7005346A7 /* RearrangedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4302A32129E1F7005346A7 /* RearrangedArray.swift */; };
+		3D4302A62129E23D005346A7 /* ViewControllerAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4302A52129E23D005346A7 /* ViewControllerAlert.swift */; };
+		3D4302A92129E9B1005346A7 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4302A82129E9B1005346A7 /* Parser.swift */; };
+		3D4302AB2129EC12005346A7 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4302AA2129EC12005346A7 /* StringExtensions.swift */; };
+		3D4302AD212A0C6D005346A7 /* CurrencyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4302AC212A0C6D005346A7 /* CurrencyListViewModel.swift */; };
+		3D4302B1212A9891005346A7 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4302B0212A9891005346A7 /* UIColorExtensions.swift */; };
 		3D4A9E1321230B6900D49419 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A9E1221230B6900D49419 /* AppDelegate.swift */; };
-		3D4A9E1521230B6900D49419 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A9E1421230B6900D49419 /* ViewController.swift */; };
-		3D4A9E1821230B6900D49419 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D4A9E1621230B6900D49419 /* Main.storyboard */; };
+		3D4A9E1521230B6900D49419 /* CurrencyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A9E1421230B6900D49419 /* CurrencyListViewController.swift */; };
 		3D4A9E1A21230B6B00D49419 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D4A9E1921230B6B00D49419 /* Assets.xcassets */; };
 		3D4A9E1D21230B6B00D49419 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D4A9E1B21230B6B00D49419 /* LaunchScreen.storyboard */; };
 		3D4A9E2821230B6B00D49419 /* PTRevolutTask18Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A9E2721230B6B00D49419 /* PTRevolutTask18Tests.swift */; };
+		3D4A9E332124816100D49419 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A9E322124816100D49419 /* ApiClient.swift */; };
+		3D4A9E352124819B00D49419 /* ResponseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A9E342124819B00D49419 /* ResponseResult.swift */; };
+		3D4A9E372124829F00D49419 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A9E362124829F00D49419 /* ReusableView.swift */; };
+		3D4A9E39212482C400D49419 /* ReusableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A9E38212482C400D49419 /* ReusableTableViewCell.swift */; };
+		3D4A9E3B2124D7F000D49419 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A9E3A2124D7F000D49419 /* Currency.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +37,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D4302A02126FDF5005346A7 /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
+		3D4302A32129E1F7005346A7 /* RearrangedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RearrangedArray.swift; sourceTree = "<group>"; };
+		3D4302A52129E23D005346A7 /* ViewControllerAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAlert.swift; sourceTree = "<group>"; };
+		3D4302A82129E9B1005346A7 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		3D4302AA2129EC12005346A7 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		3D4302AC212A0C6D005346A7 /* CurrencyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListViewModel.swift; sourceTree = "<group>"; };
+		3D4302B0212A9891005346A7 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		3D4A9E0F21230B6900D49419 /* PTRevolutTask18.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PTRevolutTask18.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D4A9E1221230B6900D49419 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3D4A9E1421230B6900D49419 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3D4A9E1721230B6900D49419 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D4A9E1421230B6900D49419 /* CurrencyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListViewController.swift; sourceTree = "<group>"; };
 		3D4A9E1921230B6B00D49419 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D4A9E1C21230B6B00D49419 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D4A9E1E21230B6B00D49419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D4A9E2321230B6B00D49419 /* PTRevolutTask18Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PTRevolutTask18Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D4A9E2721230B6B00D49419 /* PTRevolutTask18Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTRevolutTask18Tests.swift; sourceTree = "<group>"; };
 		3D4A9E2921230B6B00D49419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D4A9E322124816100D49419 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		3D4A9E342124819B00D49419 /* ResponseResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseResult.swift; sourceTree = "<group>"; };
+		3D4A9E362124829F00D49419 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		3D4A9E38212482C400D49419 /* ReusableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableTableViewCell.swift; sourceTree = "<group>"; };
+		3D4A9E3A2124D7F000D49419 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +78,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D43029F2126FDDB005346A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D4302A02126FDF5005346A7 /* CurrencyTableViewCell.swift */,
+				3D4A9E1421230B6900D49419 /* CurrencyListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D4302A22129E1E7005346A7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3D4302A32129E1F7005346A7 /* RearrangedArray.swift */,
+				3D4A9E38212482C400D49419 /* ReusableTableViewCell.swift */,
+				3D4302A52129E23D005346A7 /* ViewControllerAlert.swift */,
+				3D4302AA2129EC12005346A7 /* StringExtensions.swift */,
+				3D4302B0212A9891005346A7 /* UIColorExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3D4302A72129E7CC005346A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D4A9E3A2124D7F000D49419 /* Currency.swift */,
+				3D4A9E342124819B00D49419 /* ResponseResult.swift */,
+				3D4A9E322124816100D49419 /* ApiClient.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D4302AE212A1963005346A7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3D4302AC212A0C6D005346A7 /* CurrencyListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3D4302AF212A19AC005346A7 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				3D4302A82129E9B1005346A7 /* Parser.swift */,
+				3D4A9E362124829F00D49419 /* ReusableView.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		3D4A9E0621230B6900D49419 = {
 			isa = PBXGroup;
 			children = (
@@ -77,9 +147,12 @@
 		3D4A9E1121230B6900D49419 /* PTRevolutTask18 */ = {
 			isa = PBXGroup;
 			children = (
+				3D4302AF212A19AC005346A7 /* Utility */,
+				3D4302A22129E1E7005346A7 /* Extensions */,
+				3D4302A72129E7CC005346A7 /* Model */,
+				3D43029F2126FDDB005346A7 /* View */,
+				3D4302AE212A1963005346A7 /* ViewModel */,
 				3D4A9E1221230B6900D49419 /* AppDelegate.swift */,
-				3D4A9E1421230B6900D49419 /* ViewController.swift */,
-				3D4A9E1621230B6900D49419 /* Main.storyboard */,
 				3D4A9E1921230B6B00D49419 /* Assets.xcassets */,
 				3D4A9E1B21230B6B00D49419 /* LaunchScreen.storyboard */,
 				3D4A9E1E21230B6B00D49419 /* Info.plist */,
@@ -179,7 +252,6 @@
 			files = (
 				3D4A9E1D21230B6B00D49419 /* LaunchScreen.storyboard in Resources */,
 				3D4A9E1A21230B6B00D49419 /* Assets.xcassets in Resources */,
-				3D4A9E1821230B6900D49419 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,8 +269,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D4A9E1521230B6900D49419 /* ViewController.swift in Sources */,
+				3D4302AB2129EC12005346A7 /* StringExtensions.swift in Sources */,
+				3D4302B1212A9891005346A7 /* UIColorExtensions.swift in Sources */,
+				3D4302AD212A0C6D005346A7 /* CurrencyListViewModel.swift in Sources */,
+				3D4A9E39212482C400D49419 /* ReusableTableViewCell.swift in Sources */,
+				3D4302A92129E9B1005346A7 /* Parser.swift in Sources */,
+				3D4A9E1521230B6900D49419 /* CurrencyListViewController.swift in Sources */,
+				3D4A9E372124829F00D49419 /* ReusableView.swift in Sources */,
+				3D4A9E352124819B00D49419 /* ResponseResult.swift in Sources */,
+				3D4302A12126FDF5005346A7 /* CurrencyTableViewCell.swift in Sources */,
 				3D4A9E1321230B6900D49419 /* AppDelegate.swift in Sources */,
+				3D4A9E3B2124D7F000D49419 /* Currency.swift in Sources */,
+				3D4302A42129E1F7005346A7 /* RearrangedArray.swift in Sources */,
+				3D4A9E332124816100D49419 /* ApiClient.swift in Sources */,
+				3D4302A62129E23D005346A7 /* ViewControllerAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,14 +305,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3D4A9E1621230B6900D49419 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3D4A9E1721230B6900D49419 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3D4A9E1B21230B6B00D49419 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
